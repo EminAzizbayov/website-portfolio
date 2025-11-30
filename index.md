@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Home
+class: Home
 ---
 
 <div class="hero-section" id="home">

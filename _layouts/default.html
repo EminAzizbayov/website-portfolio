@@ -8,9 +8,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap" rel="stylesheet">
+    {% if page.class == 'Home' %}
+    <style>
+        body.Home::before {
+            background-image: url('{{ "/assets/images/coding-bg.gif" | relative_url }}');
+        }
+    </style>
+    {% endif %}
 </head>
 
-<body>
+<body class="{{ page.class | default: '' }}">
 
     {% include navbar.html %}
 
@@ -19,6 +26,10 @@
     </main>
 
     {% include footer.html %}
+
+    {% if page.class == 'Home' %}
+    <script src="{{ '/assets/js/background-fade.js' | relative_url }}"></script>
+    {% endif %}
 
 </body>
 </html>
