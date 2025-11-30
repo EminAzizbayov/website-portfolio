@@ -40,10 +40,15 @@ html {
 }
 
 .nav-logo {
-  position: absolute;
-  left: 5%;
+  position: fixed;
+  left: 20px;
+  top: 0;
+  height: 70px;
+  display: flex;
+  align-items: center;
   margin: 0;
   padding: 0;
+  z-index: 1001;
 }
 
 .logo-img {
