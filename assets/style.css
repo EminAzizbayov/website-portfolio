@@ -48,9 +48,24 @@ body.Home::after {
   pointer-events: none;
 }
 
+/* Scroll-based overlay */
+body.Home .scroll-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0D1116;
+  opacity: var(--overlay-opacity, 0);
+  z-index: 1;
+  pointer-events: none;
+  transition: opacity 0.15s ease-out;
+}
+
 body.Home main {
   position: relative;
-  z-index: 2;
+  z-index: 10;
+  background: transparent;
 }
 
 html {
@@ -164,6 +179,8 @@ main {
 .hero-section {
   text-align: center;
   margin: 80px 0 40px 0;
+  position: relative;
+  z-index: 10;
 }
 
 .hero-name {
@@ -197,6 +214,8 @@ main {
   max-width: 700px;
   margin: 60px auto;
   padding: 0 20px;
+  position: relative;
+  z-index: 10;
 }
 
 .intro-bold {
@@ -251,6 +270,8 @@ section {
   min-height: 100vh;
   text-align: center;
   font-size: 1.5rem;
+  position: relative;
+  z-index: 10;
 }
 
 
