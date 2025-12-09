@@ -1,0 +1,48 @@
+/* ===== CSS VARIABLES ===== */
+:root {
+  /* Colors */
+  --bg-primary: #0D1116;
+  --bg-secondary: #1f1e1e;
+  --bg-tertiary: #1a1f2e;
+  --bg-hover: #222836;
+  --border-color: #1a1a1a;
+  --border-secondary: #2d3748;
+  
+  --text-primary: #f2f2f2;
+  --text-secondary: #e2e2e2;
+  --text-tertiary: #a5a5a5;
+  --text-muted: #555;
+  
+  --accent-blue: #4da8ff;
+  --accent-blue-hover: #6b9fff;
+  
+  /* Spacing */
+  --spacing-xs: 5px;
+  --spacing-sm: 10px;
+  --spacing-md: 20px;
+  --spacing-lg: 40px;
+  --spacing-xl: 60px;
+  --spacing-xxl: 80px;
+  
+  /* Layout */
+  --navbar-height: 70px;
+  --navbar-height-mobile: 60px;
+  --max-width-content: 900px;
+  --max-width-wide: 1200px;
+  
+  /* Z-index layers */
+  --z-background: 0;
+  --z-overlay: 1;
+  --z-content: 10;
+  --z-navbar: 1000;
+  --z-navbar-logo: 1001;
+  
+  /* Breakpoints */
+  --breakpoint-mobile: 768px;
+  
+  /* Transitions */
+  --transition-fast: 0.15s ease-out;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
+}
+

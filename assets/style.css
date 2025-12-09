@@ -1,3 +1,28 @@
+/**
+ * ============================================================================
+ * MAIN STYLESHEET
+ * ============================================================================
+ * This file contains all component styles organized by section.
+ * CSS Variables are defined in assets/css/variables.css
+ * 
+ * File Structure:
+ * 1. Fonts (@font-face declarations)
+ * 2. Base Styles (body, html, main)
+ * 3. Homepage Background Effects
+ * 4. Navigation (navbar, nav-links)
+ * 5. Layout (main, footer)
+ * 6. Hero Section
+ * 7. Social Links
+ * 8. Scroll Indicator
+ * 9. Profile Picture
+ * 10. Sections (general section styles)
+ * 11. About Section
+ * 12. Contact Section
+ * 13. Projects Section
+ * ============================================================================
+ */
+
+/* ===== FONTS ===== */
 /* Custom Font - Arca Majora 3 */
 @font-face {
   font-family: 'Arca Majora 3';
@@ -14,6 +39,7 @@
   font-style: normal;
 }
 
+/* ===== BASE STYLES ===== */
 body {
   background-color: #0D1116;
   color: #f2f2f2;
@@ -23,6 +49,7 @@ body {
   position: relative;
 }
 
+/* ===== HOMEPAGE BACKGROUND EFFECTS ===== */
 /* Homepage background - full screen animated GIF like andrewkdinh.com */
 body.Home {
   background-color: #0D1116;
@@ -109,7 +136,7 @@ div[id] {
   }
 }
 
-
+/* ===== NAVIGATION ===== */
 .navbar {
   position: fixed;
   top: 0;
@@ -210,7 +237,7 @@ div[id] {
   color: #4da8ff;
 }
 
-
+/* ===== LAYOUT ===== */
 main {
   width: 90%;
   max-width: 900px;
@@ -552,6 +579,7 @@ main {
   }
 }
 
+/* ===== GENERAL SECTION STYLES ===== */
 section {
   margin-top: 100px;
   padding: 100px 0;
@@ -604,6 +632,18 @@ section h2 {
   margin-bottom: 0;
 }
 
+.programming-languages-image {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.programming-languages-image img {
+  max-width: 100%;
+  width: 90%;
+  height: auto;
+  display: block;
+  margin: 20 auto;
+}
 
 @media (max-width: 768px) {
   .about-content {
@@ -614,6 +654,10 @@ section h2 {
     font-size: 1.15rem;
     line-height: 1.9;
     margin-bottom: 30px;
+  }
+  
+  .programming-languages-image {
+    margin-top: 40px;
   }
 }
 

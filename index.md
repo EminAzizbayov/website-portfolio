@@ -40,7 +40,7 @@ class: Home
                <img src="{{ '/assets/images/project1.jpg' | relative_url }}" alt="Logic Gates Project">
             </div>
             <div class="project-content">
-               <h3 class="project-title">Project 1: Construction of NOT,AND,OR Gates - Team 32</h3>
+               <h3 class="project-title">Construction of NOT, AND,OR Gates - Team 32</h3>
                <p class="project-description">A hardware project building basic logic gates using breadboards and electronic components.</p>
             </div>
          </a>
@@ -77,7 +77,9 @@ class: Home
       
       <p>I'm currently studying at ADA University and improving my skills in Python, web development, and information systems. So far, I've completed multiple personal coding projects and constantly challenge myself to learn and grow.</p>
       
-      <p>My long-term goal is to build innovative tech products and make a meaningful impact through what I create.</p>
+      <div class="programming-languages-image">
+         <img src="{{ '/assets/images/programming-languages.png' | relative_url }}" alt="Programming Languages">
+      </div>
    </div>
 </section>
 

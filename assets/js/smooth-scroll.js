@@ -1,4 +1,7 @@
-// Ensure page starts at top and handle smooth scrolling with navbar offset
+/**
+ * Smooth scrolling functionality with navbar offset
+ * Handles anchor link clicks and hash navigation
+ */
 document.addEventListener('DOMContentLoaded', function() {
   // Scroll to top on page load/refresh
   window.scrollTo(0, 0);
@@ -16,14 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
       const target = document.querySelector(href);
       if (target) {
         e.preventDefault();
-        const navbarHeight = window.innerWidth <= 768 ? 60 : 70;
-        const targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
-        const offsetPosition = targetPosition - navbarHeight - 5; // Minimal spacing
-        
-        window.scrollTo({
-          top: offsetPosition,
-          behavior: 'smooth'
-        });
+        scrollToElement(target, 5);
       }
     });
   });
@@ -31,18 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Handle hash in URL on page load
   if (window.location.hash) {
     setTimeout(function() {
-      const hash = window.location.hash;
-      const target = document.querySelector(hash);
-      if (target) {
-        const navbarHeight = window.innerWidth <= 768 ? 60 : 70;
-        const targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
-        const offsetPosition = targetPosition - navbarHeight - 5; // Minimal spacing
-        
-        window.scrollTo({
-          top: offsetPosition,
-          behavior: 'smooth'
-        });
-      }
+      scrollToElement(window.location.hash, 5);
     }, 100);
   }
 });
