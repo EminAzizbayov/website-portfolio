@@ -16,7 +16,7 @@ class: Home
 
 <div class="social-links">
     <div class="github-link">
-        <a href="https://github.com/EminAzizbayov/EminAzizbayov" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/EminAzizbayov" target="_blank" rel="noopener noreferrer">
             <img src="{{ '/assets/images/GitHub-Logo.png' | relative_url }}" alt="GitHub" class="github-logo">
         </a>
     </div>

@@ -507,7 +507,7 @@ main {
 
 /* Tooltip */
 .github-link a::before {
-  content: 'GitHub Repo';
+  content: 'GitHub Profile';
   position: absolute;
   bottom: 100%;
   left: 50%;
