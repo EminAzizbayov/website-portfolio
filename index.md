@@ -74,7 +74,7 @@ class: Home
             </div>
             <div class="project-content">
                <h3 class="project-title">Hour of Code</h3>
-               <p class="project-description">A short description of what this Hour of Code project/certificate represents.</p>
+               <p class="project-description">We organized an Hour of Code session, teaching middle school students basic programming concepts through interactive activities.</p>
             </div>
          </a>
       </div>
