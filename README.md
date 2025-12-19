@@ -1,6 +1,7 @@
-## Website Portfolio File Structure
+# Website Portfolio File Structure
 ==================================
 
+```text
 EminAzizbayov/
 ├── _config.yml
 ├── _config.yml.tmp
