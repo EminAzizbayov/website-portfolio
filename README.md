@@ -1,5 +1,4 @@
 # Website Portfolio File Structure
-==================================
 
 ```text
 EminAzizbayov/
